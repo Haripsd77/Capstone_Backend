@@ -26,11 +26,11 @@ router.post('/login',async(req,res)=>{
   }
 })
 
-router.post('/auto-login', authUser, async (req, res) => {
+// router.post('/auto-login', authUser, async (req, res) => {
 
-  res.send(req.user)
+//   res.send(req.user)
 
-})
+// })
 
 router.post('/logout',authUser, async (req, res) => {
   const user =req.user;
